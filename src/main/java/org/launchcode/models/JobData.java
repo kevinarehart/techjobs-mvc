@@ -92,10 +92,12 @@ public class JobData {
     /**
      * Search all columns for the given term
      *
+     *
+     * @param searchType
      * @param value The search term to look for
      * @return      List of all jobs with at least one field containing the value
      */
-    public static ArrayList<HashMap<String, String>> findByValue(String value) {
+    public static ArrayList<HashMap<String, String>> findByValue(String searchType, String value) {
 
         // load data, if not already loaded
         loadData();
